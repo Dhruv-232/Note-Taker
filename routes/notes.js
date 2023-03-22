@@ -34,9 +34,9 @@ app.delete("/:id", (req, res) => {
     note.id = freshID.toString();
     freshID++
   }
-  
+
   fs.writeFileSync(path.join(__dirname, "../db/db.json"), JSON.stringify(notes));
   res.json(notes);
-})
+});
 
 module.exports = app;
