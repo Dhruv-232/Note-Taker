@@ -26,7 +26,9 @@ app.delete("/:id", (req, res) => {
   let id = req.params.id;
   let freshID = 0;
   
-  
+  notes = notes.filter((note) => {
+    return note.id != id;
+  });
 
   fs.writeFileSync(path.join(__dirname, "../db/db.json"), JSON.stringify(notes));
   res.json(notes);
