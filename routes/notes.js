@@ -9,7 +9,6 @@ app.get("/", (req, res) => {
 })
 
 app.post("/", (req, res) => {
-  console.log("Post route")
   let notes = JSON.parse(fs.readFileSync(path.join(__dirname,"../db/db.json"), "utf-8"));
   let note = req.body;
   let id = notes.length.toString();
@@ -21,7 +20,6 @@ app.post("/", (req, res) => {
 })
 
 app.delete("/:id", (req, res) => {
-  console.log("Delete route")
   let notes = JSON.parse(fs.readFileSync(path.join(__dirname,"../db/db.json"), "utf-8"));
   let id = req.params.id;
   let freshID = 0;
