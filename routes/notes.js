@@ -30,6 +30,11 @@ app.delete("/:id", (req, res) => {
     return note.id != id;
   });
 
+  for(note of notes) {
+    note.id = freshID.toString();
+    freshID++
+  }
+  
   fs.writeFileSync(path.join(__dirname, "../db/db.json"), JSON.stringify(notes));
   res.json(notes);
 })
