@@ -23,10 +23,10 @@ app.post("/", (req, res) => {
 app.delete("/:id", (req, res) => {
   console.log("Delete route")
   let notes = JSON.parse(fs.readFileSync(path.join(__dirname,"../db/db.json"), "utf-8"));
-  let note = req.body;
-  let id = notes.length.toString();
-  note.id = id;
-  notes.push(note);
+  let id = req.params.id;
+  let freshID = 0;
+  
+  
 
   fs.writeFileSync(path.join(__dirname, "../db/db.json"), JSON.stringify(notes));
   res.json(notes);
