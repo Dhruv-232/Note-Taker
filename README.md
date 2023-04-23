@@ -29,5 +29,35 @@ WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
 ## Screenshots
-![note taker screenshot](./Assets/images/Screenshot%20(272).png);
-![notes taker screenshot](./Assets/images/Screenshot%20(273).png);
+#### Homepage
+![note taker screenshot](./Assets/images/Screenshot%20(272).png)
+#### Notes page with no notes 
+![notes taker screenshot](./Assets/images/Screenshot%20(294).png)
+#### Notes page while a note is being written
+![notes taker screenshot](./Assets/images/Screenshot%20(295).png)
+#### Notes page with 4 saved notes
+![notes taker screenshot](./Assets/images/Screenshot%20(296).png)
+
+## NPM Packages
+- [Generate Unique IDs](https://www.npmjs.com/package/uuid)
+- [Express.js](https://www.npmjs.com/package/express)
+
+## Installation 
+To install this project onto your own computer, use `git clone` in your command-line and paste the ssh keys and then press enter. This will clone the repository on your computer so you can run it on your device. Alternatively, you can also use this application by clicking on the heroku link under te `Links` section.
+
+## Usage 
+To use this repo, go to the cloned files, then type `node index` in your command-line. Be sure you’re in the correct location in your command-line/terminal first!
+
+## Testing
+You can test this project with your own dummy data. Click on the heroku link and test the application by adding, saving and deleting notes.
+
+## Links
+Github URL- https://github.com/Dhruv-232/Note-Taker
+
+Heroku Link- https://sleepy-plains-67185.herokuapp.com/notes
+
+## Questions
+For queries and doubt about anything in this repo, contact me on my email: dhruvsharma2004@outlook.com
+
+## Author 
+Dhruv Sharma
